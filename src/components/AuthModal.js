@@ -25,7 +25,7 @@ const AuthModal = ({setShowModal, isSignUp}) => {
                 return
             }
             console.log('posting',email,password)
-            const response = await axios.post(`https://bumblebee-ihl9-khushishah123.vercel.app/${isSignUp ? 'signup' : 'login'}`, {email, password})
+            const response = await axios.post(`http://localhost:8000/${isSignUp ? 'signup' : 'login'}`, {email, password})
 
             setCookie('UserId',response.data.userId)
             setCookie('AuthToken', response.data.token)
