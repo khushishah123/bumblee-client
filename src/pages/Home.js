@@ -3,7 +3,7 @@ import React from "react";
 import {useState} from 'react'
 import AuthModal from "../components/AuthModal"
 import {useCookies} from "react-cookie"
-import './index.css'
+
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false)
