@@ -25,7 +25,7 @@ const AuthModal = ({setShowModal, isSignUp}) => {
                 return
             }
             console.log('posting',email,password)
-            console.log('server',process.env.REACT_APP_SERVER);
+            console.log('server', process.env.REACT_APP_SERVER);
             const response = await axios.post(`${process.env.REACT_APP_SERVER}/${isSignUp ? 'signup' : 'login'}`, {email, password})
 
             setCookie('UserId',response.data.userId)
