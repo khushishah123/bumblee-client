@@ -116,6 +116,26 @@ nav .logo-container .logo {
     margin-top: 30vh;
 }
 
+@media only screen and (max-width: 767px) {
+  .home {
+    /* CSS rules for phones */
+  }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .home {
+    /* CSS rules for laptops */
+  }
+}
+
+/* Styles for desktops and larger screens */
+@media only screen and (min-width: 1024px) {
+  .home {
+    /* CSS rules for desktops */
+  }
+}
+
 /*----- Auth Modal -----*/
 .auth-modal {
     position: absolute;
