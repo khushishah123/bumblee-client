@@ -192,7 +192,7 @@ const Onboarding = () => {
                     </section>
 
                     <section>
-                        <label htmlFor="about">Profile Profile</label>
+                        <label htmlFor="about">Profile Photo</label>
                         <input
                             type="url"
                             name="url"
